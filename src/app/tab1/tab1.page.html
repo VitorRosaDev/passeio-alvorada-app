@@ -1,17 +1,48 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Conheça Alvorada
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <ion-card-header>
+      <ion-img src="../../assets/images/alvorada1.png"></ion-img>
+      <ion-card-title style="text-align: center;">Terra Maravilhosa!</ion-card-title>
+    </ion-card-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <ion-card-content style="text-align: justify;">
+      <p>Alvorada, no coração do Rio Grande do Sul, convida você a descobrir seus encantos, unindo a tranquilidade de seus
+      parques com a vivacidade de sua cultura efervescente. Desfrute de momentos de lazer e relaxamento no Parque
+      Municipal Lagoa do Cocão e vivencie a tradição gaúcha no singular Chimarródromo Municipal.</p>
+      <hr>
+      <p>Para os amantes do
+      esporte, a cidade se destaca com a renomada pista de skate na praça central, referência estadual na modalidade,
+      além do Ginásio Municipal, palco de diversas atividades. Logo na entrada da cidade, o Centro de Treinamento do
+      Internacional reforça a paixão local pelo esporte. Alvorada te espera com uma combinação única de natureza,
+      cultura e esportes para todos os gostos!</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Segmentos</ion-card-title>
+    </ion-card-header>
+
+    <ion-item href="https://leiturasdeonibus.com/pontos-turisticos/" target="_blank">
+      <ion-icon name="map" slot="start"></ion-icon>
+      <ion-label>Roteiro</ion-label>
+    </ion-item>
+
+    <ion-item
+      href="https://www.google.com/search?client=firefox-b-d&sca_esv=3f3edf418254f9fb&tbm=lcl&sxsrf=AHTn8zp6QECLDk2LV2lnvJL6yRv9D5E43w:1743046029085&q=gastronomia+em+Alvorada&rflfq=1&num=10&sa=X&ved=2ahUKEwj48I-7qKmMAxWkrZUCHQ6sLWIQjGp6BAggEAE&biw=1320&bih=702&dpr=1.25#rlfi=hd:;si:;mv:[[-29.995369,-51.0430145],[-30.0352464,-51.0910095]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u5!2m2!5m1!1sgcid_3bars_1and_1pubs!1m4!1u5!2m2!5m1!1sgcid_3barbecue_1restaurant!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e5!2m1!1e3!3sIAEqAkJS,lf:1,lf_ui:9"
+      target="_blank">
+      <ion-icon name="fast-food" slot="start"></ion-icon>
+      <ion-label>Gastronomia</ion-label>
+    </ion-item>
+
+  </ion-card>
+
 </ion-content>

@@ -1,0 +1,74 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Vale Conferir</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-segment>
+    <ion-segment-button value="first" content-id="first">
+      <ion-label>Tancredo Neves</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="second" content-id="second">
+      <ion-label>Djalma Neves</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <ion-segment-view>
+    <ion-segment-content id="first">
+      <ion-card>
+        <ion-card-header>
+          <ion-img src="../../../assets/images/futsal.jpg"></ion-img>
+          <ion-card-title style="text-align: center;">
+            <h3>Ginásio Municipal Tancredo Neves</h3>
+          </ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content style="text-align: justify;">
+          <p>O ginásio Tancredo Neves, localizado no bairro Bela Vista, em Alvorada, oferece diversas
+            modalidades esportivas gratuitas para moradores de diferentes idades, incluindo caminhada orientada,
+            ginástica, futsal, ritmos e basquete.</p>
+          <hr>
+          <p>As aulas são ministradas por professores especializados nos períodos da manhã e da tarde. À noite, há
+            horários disponíveis para cessões. Para se inscrever nas aulas, os interessados devem procurar o
+            departamento de esportes no ginásio e falar com Miguel ou Marcelo. Para as cessões de horários noturnos, é
+            preciso fazer a solicitação junto à secretaria.</p>
+          <hr>
+          <div style="display: flex; justify-content: center;">
+            <ion-button
+              href="https://www.alvorada.rs.gov.br/ginasio-tancredo-neves-oferece-diferentes-atividades-esportivas-gratuitas/"
+              target="_blank">visitar site</ion-button>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </ion-segment-content>
+    <ion-segment-content id="second">
+      <ion-card>
+        <ion-card-header>
+          <ion-img src="../../../assets/images/futebol-em-alvorada.jpg"></ion-img>
+          <ion-card-title style="text-align: center;">
+            <h3>Ginásio Djalma Neves</h3>
+          </ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content style="text-align: justify;">
+          <p>A Prefeitura de Alvorada que está oferecendo diversas atividades esportivas gratuitas no Ginásio Djalma
+            Neves. As atividades são coordenadas pela Secretaria de Cultura, Esporte e Juventude (SMCEJ) e acontecem nos
+            turnos da manhã e da tarde.</p>
+          <hr>
+          <p>O secretário de Esporte, Nato Werlang, destaca o esporte como ferramenta de inclusão, saúde e qualidade de
+            vida. A prefeitura oferece diversas modalidades para crianças, jovens, adultos e idosos, promovendo o
+            bem-estar e incentivando hábitos saudáveis, como yoga, pilates, ritmos, taekwondo e treinamento funcional.
+            Há também aulas de Boxe da Vila para o Ringue e de Jiu-jitsu Futuro Bonsucesso, financiadas pela Lei de
+            Incentivo ao Esporte – Pró-esporte, do Governo do Estado.</p>
+          <hr>
+          <div style="display: flex; justify-content: center;">
+            <ion-button
+              href="https://www.alvorada.rs.gov.br/prefeitura-disponibiliza-diversas-atividades-esportivas-gratuitas-no-ginasio-djalma-neves/"
+              target="_blank">visitar site</ion-button>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </ion-segment-content>
+  </ion-segment-view>
+</ion-content>

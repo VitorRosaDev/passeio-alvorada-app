@@ -1,17 +1,86 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Lazer
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="../../assets/images/lagoa-do-cocao.jpg" alt="Lagoa do Cocão" style="border-radius: 50%;">
+        </ion-thumbnail>
+        <ion-label>
+          <ion-text color="primary">
+            <h2>Lagoa do Cocão</h2>
+          </ion-text>
+          <p>Parque público</p>
+        </ion-label>
+      </ion-item>
+      <ion-item-options side="end">
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+        <ion-item-option color="success"
+          (click)="openSite('https://www.google.com/maps/@-30.0175609,-51.0736664,3a,75y,96.43h,71.26t/data=!3m8!1e1!3m6!1sAF1QipMqpLNu5a6zV3QedCI9l7hnCxk5bOsstvBk2by0!2e10!3e11!6shttps:%2F%2Flh3.googleusercontent.com%2Fp%2FAF1QipMqpLNu5a6zV3QedCI9l7hnCxk5bOsstvBk2by0%3Dw900-h600-k-no-pi18.742259606109158-ya9.361017274653932-ro0-fo100!7i7200!8i3600?entry=ttu&g_ep=EgoyMDI1MDMyNS4wIKXMDSoASAFQAw%3D%3D')"
+          target="_blank">
+          <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+        </ion-item-option>
+
+        <ion-item-option class="ion-color-primary" (click)="like()">
+          <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="../../assets/images/chimarrodromo.jpg" alt="Chimarródromo" style="border-radius: 50%;">
+        </ion-thumbnail>
+        <ion-label>
+          <ion-text color="primary" class="ion-text-wrap">
+            <h2>Chimarródromo</h2>
+          </ion-text>
+          <p>Parque Público</p>
+        </ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option color="success"
+          (click)="openSite('https://www.google.com/maps/@-29.998731,-51.0766187,3a,34.6y,157.95h,92.5t/data=!3m7!1e1!3m5!1swpPgljDIXisYjGNXF26xBg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-2.4990263605287453%26panoid%3DwpPgljDIXisYjGNXF26xBg%26yaw%3D157.9495540942978!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI1MDMyNS4wIKXMDSoASAFQAw%3D%3D')">
+          <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+        </ion-item-option>
+
+        <ion-item-option class="ion-color-primary" (click)="like()">
+          <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="../../assets/images/itapema.jpg" alt="Itapema Park" style="border-radius: 50%;">
+        </ion-thumbnail>
+        <ion-label>
+          <ion-text color="primary" class="ion-text-wrap">
+            <h2>Itapema Park</h2>
+          </ion-text>
+          <p>Parque Aquático</p>
+        </ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option color="success" (click)="openSite('https://www.itapemapark.com.br/')">
+          <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+        </ion-item-option>
+
+        <ion-item-option class="ion-color-primary" (click)="like()">
+          <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+  <p style="text-align: center; opacity: 0.5;">< < < Deslize para ver opções < < <</p>
+
 </ion-content>

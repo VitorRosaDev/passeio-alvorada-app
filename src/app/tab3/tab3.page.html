@@ -1,17 +1,47 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Esportes
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-list>
+    <ion-item [routerLink]="['/futebol']">
+      <ion-thumbnail slot="start">
+        <img src="../../assets/images/futebol.jpeg" alt="Campo de futebol" style="border-radius: 50%;">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text color="primary">
+          <h2>Futebol</h2>
+        </ion-text>
+      </ion-label>
+      <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-item>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+    <ion-item [routerLink]="['/skate']">
+      <ion-thumbnail slot="start">
+        <img src="../../assets/images/skate.jpeg" alt="Pista de skate" style="border-radius: 50%;">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text color="primary">
+          <h2>Skate</h2>
+        </ion-text>
+      </ion-label>
+      <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-item>
+
+    <ion-item [routerLink]="['/vale-conferir']">
+      <ion-thumbnail slot="start">
+        <img src="../../assets/images/ginasio.jpeg" alt="Ginasio Municipal" style="border-radius: 50%;">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text color="primary">
+          <h2>Vale Conferir</h2>
+        </ion-text>
+      </ion-label>
+      <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-item>
+  </ion-list>
 </ion-content>

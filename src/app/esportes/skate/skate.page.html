@@ -1,0 +1,95 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Skate</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-segment>
+    <ion-segment-button value="first" content-id="first">
+      <ion-label>Pista</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="second" content-id="second">
+      <ion-label>Atletas</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <ion-segment-view>
+    <ion-segment-content id="first">
+      <ion-card>
+        <ion-card-header style="align-items: center;">
+          <iframe width="320" height="180" src="https://www.youtube.com/embed/lGF-BIw8HRg?si=TkF4dcok_Ef_N7IU?mute=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <ion-card-title style="text-align: center;">
+            <h3>Pista</h3>
+          </ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content style="text-align: justify;">
+          <p>A pista de skate da praça central de Alvorada, inaugurada em 2017, rapidamente se estabeleceu como um marco
+            na cena do skate local e estadual. Mais do que uma simples estrutura de concreto, ela se tornou um
+            catalisador para o desenvolvimento do esporte na região, escrevendo sua própria história.</p>
+          <hr>
+          <p>Um dos seus primeiros legados foi ter sido o palco dos primeiros passos de Rafael "Gordo" Alves, o
+            talentoso skatista que viria a se consagrar campeão gaúcho. Sua trajetória, iniciada ali, ecoa como
+            inspiração para inúmeros jovens que encontram na pista um espaço para a prática e a superação.</p>
+          <hr>
+          <p>A relevância da pista transcendeu o âmbito local ao sediar etapas do prestigiado circuito gaúcho da
+            Federação Gaúcha de Skate. Essa participação no cenário competitivo estadual elevou o nível dos skatistas
+            locais e projetou Alvorada no mapa do skate gaúcho.</p>
+          <hr>
+          <p>Anualmente, a pista pulsa com o High Sessions, um evento que se consolidou como um ponto alto no calendário
+            da cidade. Mais do que um campeonato de skate, o High Sessions promove uma rica integração entre diversas
+            expressões da cultura urbana, reunindo artistas do grafite, praticantes de breakdance (hoje também um
+            esporte olímpico), e músicos de diferentes estilos. Essa celebração da cultura de rua fortalece a identidade
+            da pista como um espaço de encontro e efervescência cultural.</p>
+          <hr>
+          <p>Ao longo dos anos, a pista de skate da praça central de Alvorada firmou-se como um ponto de referência para
+            a comunidade, um local de lazer e socialização que vai além do esporte. Mais importante ainda, consolidou-se
+            como um verdadeiro berço para a formação de atletas de alto nível, cujos talentos foram lapidados em suas
+            rampas e obstáculos, alçando voo para o mais alto patamar do skate. A história dessa pista se confunde com a
+            história do skate em Alvorada, um legado de paixão, dedicação e conquistas.</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-segment-content>
+    <ion-segment-content id="second">
+      <ion-card>
+        <ion-card-header>
+          <ion-img src="../../../assets/images/futebol-em-alvorada.jpg"></ion-img>
+          <ion-card-title style="text-align: center;">
+            <h3>Atletas</h3>
+          </ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content style="text-align: justify;">
+          <p>A história da pista de skate da praça central de Alvorada, um celeiro de talentos desde sua inauguração em
+            2017, entrelaça-se de forma indelével com a trajetória de Rafael "Gordo" Alves. Foi nesse palco de concreto
+            que o atual campeão gaúcho deu suas primeiras "rasgadas" no skate, ainda na categoria mirim, demonstrando
+            desde cedo um talento nato e uma paixão contagiante pelo esporte. Cada obstáculo superado ali, cada manobra
+            aprendida, pavimentou o caminho que o levaria ao topo do skate estadual. Sua ascensão, desde as primeiras
+            competições locais até a consagração como campeão gaúcho, reflete o potencial que a pista sempre nutriu.</p>
+          <hr>
+          <p>Da mesma forma, a história do skate em Alvorada reverbera a trajetória de Marcus Dias "Leko", campeão
+            gaúcho em 2011. Sua história, assim como a de Rafael, teve um início precoce, moldado pelas ruas e,
+            certamente, influenciado por espaços como a pista central. Leko personifica a continuidade e a disseminação
+            do skate, levando suas manobras e a mensagem positiva do esporte por todo o Rio Grande do Sul, inspirando
+            novas gerações a trilharem o mesmo caminho de paixão e superação.</p>
+          <hr>
+          <p>Outro nome de destaque que ecoa na história do skate alvoradense é Iuri Gonçalves. Por muitos anos, Iuri
+            figurou entre os melhores do cenário regional, abrilhantando campeonatos e contribuindo para a consolidação
+            da cena local. Sua dedicação e talento também encontraram na pista da praça central um espaço para
+            florescer, demonstrando a força e a tradição do skate em Alvorada.</p>
+          <hr>
+          <p>A relevância desses nomes, Rafael Gordo, Marcus Dias Leko e Iuri Gonçalves, forjados e impulsionados por um
+            espaço como a pista de skate da praça central, confere ao skate de Alvorada um destaque notável dentro do
+            cenário estadual e até nacional. Suas histórias de dedicação, conquistas e a paixão pelo skate ecoam pelas
+            rampas e obstáculos da cidade, criando uma identidade forte e um legado inspirador. Para quem visita
+            Alvorada, conhecer essa história e presenciar a vitalidade da cena do skate na praça central é mergulhar em
+            um aspecto cultural rico e vibrante, que merece ser reconhecido e valorizado.</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-segment-content>
+  </ion-segment-view>
+</ion-content>
